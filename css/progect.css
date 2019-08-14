@@ -1,0 +1,435 @@
+/********************* my static style **********************/
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+
+/************* the container **********/
+.container{max-width: 900px;}
+/* class in the input****/
+.form-control{font-size: 13px;}
+button:hover,input[type='submit']:hover{background-color:#50087b!important}
+
+/* strat navbar*/
+.navbar-top{
+background: #373356;
+padding: 10px 0 15px 0;
+color: #FFF;
+overflow: hidden
+}
+.navbar-top button{
+    width: 75px;
+    height: 35px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.navbar-top button:first-of-type{
+    background: transparent;
+    border: 1px solid #734ea1;
+    color: #FFF;
+}
+.navbar-top button:last-of-type{
+  color: #654490;
+    border: none;
+    background: #8d64a6;
+    color: #FFF;
+    margin-right: 10px;
+}
+/* end navbar*/
+
+/* start header*/
+.header{
+    background: url('../images/home-bg.jpg')no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+}
+.header .job-details{
+width: 60%;
+padding: 20px 0 200px 0 ;  
+overflow: hidden;
+margin:35vh auto;
+}
+.header .job-details p{
+    font-size: 30px;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+.header .job-details form{
+    background: #F8F3F3;
+    padding: 30px 30px 50px 30px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #FFF;   
+}
+.header .job-details form label{
+    color: #4e4b5a;
+}
+.header .job-details input{
+    display: block;
+    margin-bottom: 20px;
+    padding: 0 40px 0 0;
+}
+.header .job-details form input[type='submit']{
+    display: block;
+    width: 95%;
+    border-radius: 20px;
+    border: none;
+    margin: auto;
+    background: #734ea1;
+    color: #FFF;
+    display: block;
+}
+.header .job-details form i{
+    position: absolute;
+    top: 40px;
+    right: 23px;
+    color: #a7a8aa;
+}
+/*************** this maedia query for responsive ===> job-details***************************/
+@media (max-width:970px){
+    .header .job-details{
+       margin:12vh auto;
+       } 
+}
+@media (max-width:500px){
+    .header .job-details{
+       margin:5vh auto;
+    } 
+}
+@media (max-width:500px){
+    .header .job-details{
+      width: 95%;
+    } 
+}
+/* end job details*/
+
+/* start information*/
+.information{
+    background: #F8F3F3;
+    padding: 30px 0 50px 0px;
+}
+.information .items span{font-size: 30px;}
+
+.information .items p{
+color: #ad72a7;
+font-size: 19px;
+}
+
+
+/* start testiomainal carsouel*/
+.client-reviews{
+    background: url(../images/header_stock.png)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+.client-reviews .overlay{
+    background:#33313f;
+    opacity: .9;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+ .container {
+    margin-top: 20px;
+}
+
+/* Carousel Styles */
+.carousel-indicators .active {
+    background-color: #8261a7
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px
+}
+
+.carousel-control {
+    width: 0;
+}
+.carousel-indicators li{
+    border:1px solid #6f4c76;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background-image: none;
+	background-repeat: no-repeat;
+	text-shadow: none;
+}
+
+.carousel-control.left span {
+	padding: 15px;
+}
+
+.carousel-control.right span {
+	padding: 15px;
+}
+.carousel-indicators{
+ position: absolute;
+bottom: -115px;   
+}
+.inf-review{
+    width: 70%;
+    margin:70px 0 0 70px;
+}
+@media(max-width:500px){
+    .inf-review{
+        width: 100%;
+        margin: 0
+    }
+    .client-reviews{
+        height: 600px
+    }
+}
+@media(max-width:2  00px){
+    .client-reviews{
+        height: 900px
+    } 
+}
+@media(max-width:700px){
+    .client-reviews{
+        height: 600px
+    } 
+}
+.inf-review h2,.inf-review h4{
+text-align: left;
+color: #956899
+}
+.inf-review hr{
+   border: 1px solid #6d4f77
+}
+.inf-review p{
+ text-align: left;  
+    color: #838288
+}
+
+.inf-review .client-img,.inf-review .client-info{
+    float: left;
+    margin-right: 20px;
+    color: #FFF;
+}
+.client-info h4{color: #838288}
+
+.inf-review .client-img img{
+width: 100px;
+height: 100px;
+}
+.inf-review .client-info i{
+    color: #8363a4
+}
+.inf-review .client-info  .fa-star-o{
+    color: #DDD;
+}
+/* color of two row */
+.glyphicon{
+    color: #594976;
+}
+
+
+
+/* strat get-start*/
+.get-start{
+    background-color: #8e65a9;
+    overflow: hidden;
+   padding: 5px 0 0 0; 
+}
+.get-start p{
+    width: 70%;
+    text-align: left;
+    padding: 0 0px 0 70px;
+    font-size:30px;
+    color: #fdfdf9;
+}
+.get-start button{
+    width: 30%;
+    display: inline-block;
+    height: 42px;
+    color: #FFF;
+    background: transparent;
+    border-radius: 0px 22px 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+/**** start the media*/
+@media (max-width:800px){
+    
+    .get-start p{
+        padding: 0 0px 0 50px;
+        font-size: 17px;
+    } 
+    .get-start button{
+        font-size: 13px;
+        height: 30px;
+    }
+}
+@media (max-width:550px){
+    .get-start{
+        padding: 0;
+    }
+    .get-start p{
+        padding: 0 0px 0 20px;
+        font-size: 13px;
+    } 
+    .get-start button{
+        font-size: 13px;
+        height: 30px;
+    }
+}
+@media (max-width:400px){
+    .get-start p{
+        padding: 0 0px 0 10px;
+        font-size: 13px;
+    } 
+    .get-start button{
+        font-size: 9px;
+        height: 35px;
+    }
+}
+
+
+
+/* start bottom navbar*/
+.navbar-bottom{
+    padding: 20px 0 20px 0;
+}
+.navbar-bottom a{
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-right: 40px;
+    color: #aaa;
+}
+/* end bottom navbar*/
+/* start footer*/
+.footer{
+    background: #DDD;
+    padding: 5px 0 15px 0;
+}
+.footer h3{
+ margin-bottom: 15px;
+color: #888;
+}
+.footer >span{
+width: 40px;
+height: 40px;
+background: #392a4c;
+display: inline-block;
+padding: 10px;
+color: #FFF;
+border-radius: 14px 0 0 0;
+margin-right: 8px;
+}
+.footer p{
+padding: 16px;
+color: #AAA;
+}
+
+/* start sign in */
+.sigin,.login{
+width: 70%;
+margin: 20px auto;
+}
+.sigin h1 ,.login h1{
+    background: #cdccdc;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px;
+    border-radius: 10px 10px 0 0px;
+    margin: 0;
+    color: #666;
+    
+}
+.sigin form,.login form{
+    background: #f3f3f3;
+    padding: 40px 20px 10px 20px;  
+}
+.sigin form,.login form label{
+    color: #4c4a58 ;
+}
+.sigin form input,.login form input{
+    margin-bottom: 10px;
+}
+.sigin form p,.login form p{
+    display: inline-block;
+    margin:0 15px 0 0 ;
+    padding: 0;
+}
+.sigin input[type="submit"],.login input[type="submit"]{
+    background:  #373356;
+    border: 0;
+    color: #FFF; 
+}
+.sigin .checkbox{
+    width: 90%;
+    margin:20px auto 20px auto; 
+}
+.login .checkbox{
+   margin:20px auto 20px auto;  
+}
+.sigin .checkbox > span a{
+color: #9f71a7;
+}
+/** media query*/
+@media (max-width:500px){
+    .modal-dialog{
+        width: 100%;
+    }
+    .sigin,.login{
+        width:98%;
+        margin:auto;
+    }
+    .sigin .checkbox > span{
+        font-size: 10px;
+    }
+}
+
+/* start login*/
+
+.login  a,.sigin a{
+    font-weight: bold; 
+    color: #a864ff;
+    font-weight: bold
+}
+/* this is th check box*/
+.input[type="checkbox"] {
+    display:none;
+    z-index: 1000;
+}
+input[type="checkbox"] + label {
+    margin-right: 20px;
+   color: #9f71a7
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+    position: absolute;
+    right: -14px;
+    top: 3px
+}
+input[type="checkbox"]:checked + label span {
+        background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+}
+/* end checkbox */
+  /*******************************************************end of file*********************************/
+
+
+    
+
+  
+
